@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import './globals.css';
 import AmbientMusic from '@/components/AmbientMusic';
+import { AuthProvider } from '@/components/AuthProvider';
+import AuthModal from '@/components/AuthModal';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cinemasplit.com'),
@@ -18,8 +22,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        {children}
-        <AmbientMusic />
+        <AuthProvider>
+          {children}
+          <AmbientMusic />
+          <AuthModal />
+          <Suspense fallback={null}>
+            <GoogleAnalytics />
+          </Suspense>
+        </AuthProvider>
       </body>
     </html>
   );
