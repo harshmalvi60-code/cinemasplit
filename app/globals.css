@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #06070a;
+  --bg-card: #0d0f14;
+  --ink: #f5f5f7;
+  --ink-soft: #c8c9cf;
+  --ink-muted: #8a8d96;
+  --ink-faint: #4d505a;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --accent: #13edff;
+  --accent-glow: rgba(19, 237, 255, 0.35);
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-feature-settings: 'ss01', 'cv11';
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.005em;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.9  0 0 0 0 0.82  0 0 0 0.55 0'/></filter><rect width='280' height='280' filter='url(%23n)'/></svg>");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 100;
+  mix-blend-mode: overlay;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+  pointer-events: none;
+  z-index: 99;
+}
+
+.glow {
+  position: fixed;
+  width: 70vw;
+  height: 70vw;
+  max-width: 1100px;
+  max-height: 1100px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+.glow.cyan {
+  top: -25vh;
+  left: -20vw;
+  background: radial-gradient(circle, rgba(19, 237, 255, 0.12) 0%, transparent 65%);
+  animation: drift 50s ease-in-out infinite;
+}
+.glow.deep {
+  top: 60vh;
+  left: 55vw;
+  background: radial-gradient(circle, rgba(10, 164, 184, 0.10) 0%, transparent 65%);
+  animation: drift 65s ease-in-out infinite reverse;
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(20vw, 14vh) scale(1.08); }
+  66%      { transform: translate(-10vw, 28vh) scale(0.95); }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.grain {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.9  0 0 0 0 0.82  0 0 0 0.55 0'/></filter><rect width='280' height='280' filter='url(%23n)'/></svg>");
+}
+
+[data-mood='dawn'] {
+  background:
+    radial-gradient(ellipse 70% 55% at 78% 20%, rgba(232, 162, 112, 0.65) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 25% 80%, rgba(180, 80, 50, 0.32) 0%, transparent 65%),
+    linear-gradient(165deg, #2d1812 0%, #14090a 100%);
+}
+[data-mood='dusk'] {
+  background:
+    radial-gradient(ellipse 70% 55% at 30% 30%, rgba(150, 90, 140, 0.45) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 80% 80%, rgba(200, 110, 60, 0.30) 0%, transparent 60%),
+    linear-gradient(160deg, #1a1018 0%, #0a0608 100%);
+}
+[data-mood='night'] {
+  background:
+    radial-gradient(circle 6px at 72% 38%, rgba(220, 230, 255, 0.95) 0%, rgba(180, 200, 235, 0.3) 30%, transparent 75%),
+    radial-gradient(circle 32px at 72% 38%, rgba(180, 200, 235, 0.18) 0%, transparent 80%),
+    radial-gradient(ellipse 110% 100% at 50% 65%, rgba(40, 65, 110, 0.45) 0%, transparent 75%),
+    linear-gradient(180deg, #060b18 0%, #0a1020 100%);
+}
+[data-mood='fire'] {
+  background:
+    linear-gradient(125deg, transparent 20%, rgba(238, 96, 36, 0.32) 50%, transparent 80%),
+    radial-gradient(ellipse 60% 50% at 30% 75%, rgba(210, 70, 30, 0.42) 0%, transparent 55%),
+    linear-gradient(160deg, #1c0a04 0%, #0c0402 100%);
+}
+[data-mood='water'] {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 48%, rgba(105, 148, 158, 0.32) 0%, transparent 65%),
+    linear-gradient(180deg, rgba(70, 100, 110, 0.22) 0%, transparent 30%, transparent 68%, rgba(20, 42, 52, 0.5) 100%),
+    linear-gradient(165deg, #0e1719 0%, #060a0c 100%);
+}
+[data-mood='violet'] {
+  background:
+    radial-gradient(ellipse 50% 40% at 22% 30%, rgba(150, 128, 180, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse 55% 45% at 78% 70%, rgba(108, 90, 140, 0.32) 0%, transparent 55%),
+    linear-gradient(155deg, #1c1623 0%, #0a070e 100%);
+}
+[data-mood='gold'] {
+  background:
+    radial-gradient(ellipse 90% 55% at 50% 105%, rgba(232, 170, 60, 0.55) 0%, transparent 55%),
+    radial-gradient(ellipse 45% 32% at 50% 92%, rgba(255, 210, 100, 0.45) 0%, transparent 45%),
+    linear-gradient(180deg, #1e1608 0%, #0c0703 100%);
+}
+[data-mood='ice'] {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 40%, rgba(140, 200, 230, 0.30) 0%, transparent 60%),
+    linear-gradient(180deg, #0a1424 0%, #060b18 100%);
+}
+[data-mood='rose'] {
+  background:
+    radial-gradient(circle 40% at 22% 28%, rgba(225, 148, 188, 0.42) 0%, transparent 50%),
+    radial-gradient(circle 35% at 72% 62%, rgba(195, 98, 148, 0.32) 0%, transparent 45%),
+    linear-gradient(165deg, #1f0c16 0%, #0c0408 100%);
+}
+[data-mood='ash'] {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 45%, rgba(170, 175, 185, 0.20) 0%, transparent 70%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.55) 100%),
+    linear-gradient(145deg, #18181c 0%, #0a0a0c 100%);
+}
