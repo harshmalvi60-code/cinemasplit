@@ -8,7 +8,17 @@ export function getFilms(worldSlug: string, emotionSlug: string): Film[] {
 }
 
 export function totalCuratedFilms(): number {
-  return Object.values(films).reduce((sum, list) => sum + list.length, 0);
+  const all: Set<string> = new Set();
+  for (const list of Object.values(films)) {
+    for (const f of list) all.add(f.title);
+  }
+  return all.size;
+}
+
+export function filmsForWorld(worldSlug: string): number {
+  return Object.entries(films)
+    .filter(([key]) => key.startsWith(`${worldSlug}/`))
+    .reduce((sum, [, list]) => sum + list.length, 0);
 }
 
 export function justWatchUrl(film: Film, region = 'in'): string {

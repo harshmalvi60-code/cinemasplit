@@ -21,7 +21,7 @@ import {
   emotional_growth,
 } from './batch2';
 
-// ── Batch 3 (15 extra for first 7 emotions) ─────────────────────────────────
+// ── Batch 3 (15 extra for first 9 emotions) ──────────────────────────────────
 import {
   healing_heartbreak_extra,
   healing_numbness_extra,
@@ -34,7 +34,7 @@ import {
   existential_meaning_extra,
 } from './batch3';
 
-// ── Batch 4 (15 extra for last 7 emotions) ──────────────────────────────────
+// ── Batch 4 (15 extra for last 5 emotions) ──────────────────────────────────
 import {
   grief_living_extra,
   inner_peace_extra,
@@ -42,6 +42,14 @@ import {
   hope_light_extra,
   emotional_growth_extra,
 } from './batch4';
+
+// ── New worlds: Obsession + Burnout ─────────────────────────────────────────
+import {
+  obsession_destructive,
+  obsession_creative,
+  burnout_empty,
+  burnout_compassion,
+} from './new-worlds';
 
 export const films: FilmIndex = {
   'healing/heartbreak-recovery':
@@ -85,4 +93,17 @@ export const films: FilmIndex = {
 
   'emotional-growth/becoming':
     [...emotional_growth, ...emotional_growth_extra],
+
+  // New worlds
+  'obsession/destructive-love':
+    [...obsession_destructive],
+
+  'obsession/creative-obsession':
+    [...obsession_creative],
+
+  'burnout/empty-achievement':
+    [...burnout_empty],
+
+  'burnout/compassion-fatigue':
+    [...burnout_compassion],
 };

@@ -106,6 +106,83 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── THEMATIC COLLECTIONS ─────────────────────────── */}
+        <section className="pb-28 md:pb-36 border-t border-white/6 pt-20">
+          <div className="mb-10">
+            <div className="mb-4 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-ink-muted">
+              <span className="inline-block h-px w-5 bg-ink-faint" />
+              Emotional Pathways
+            </div>
+            <h2 className="max-w-[640px] text-[28px] font-bold leading-[1.05] tracking-[-0.025em] text-ink md:text-[40px]">
+              Not sure where to begin?
+            </h2>
+            <p className="mt-3 text-[15px] text-ink-muted max-w-[500px] leading-[1.6]">
+              Start with a feeling, not a category.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                label: 'The Long Dark',
+                description: 'Films for when everything feels like too much and you need something that understands.',
+                href: '/healing/emotional-numbness',
+                accent: 'rgba(122,154,160,0.5)',
+              },
+              {
+                label: 'The Self You Lost',
+                description: 'Films for when the story you told about yourself stopped working.',
+                href: '/identity-crisis/not-knowing-yourself',
+                accent: 'rgba(150,128,180,0.5)',
+              },
+              {
+                label: 'The Weight of Others',
+                description: 'Films for when you\'ve given everything and find yourself empty.',
+                href: '/burnout/compassion-fatigue',
+                accent: 'rgba(138,112,96,0.5)',
+              },
+              {
+                label: 'Love That Hurt You',
+                description: 'Films for the love that made everything more intense — and then left.',
+                href: '/healing/heartbreak-recovery',
+                accent: 'rgba(225,148,188,0.5)',
+              },
+              {
+                label: 'The Quiet Inside',
+                description: 'Films for the part of you that knows the answer is stillness.',
+                href: '/inner-peace/slowing-down',
+                accent: 'rgba(156,184,122,0.5)',
+              },
+              {
+                label: 'When Nothing Means Anything',
+                description: 'Films for the question that won\'t stop asking itself.',
+                href: '/existential-confusion/meaning-of-life',
+                accent: 'rgba(136,184,232,0.5)',
+              },
+            ].map(({ label, description, href, accent }) => (
+              <Link
+                key={href}
+                href={href}
+                className="group relative block overflow-hidden rounded-2xl border border-white/8 bg-[#0b0d12]/60 p-7 hover:border-accent/30 transition-all duration-500 no-underline"
+              >
+                <span
+                  aria-hidden
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  style={{ background: `radial-gradient(circle 280px at 0% 100%, ${accent}, transparent 70%)` }}
+                />
+                <div className="relative z-[1]">
+                  <p className="text-[17px] font-semibold text-ink mb-2 group-hover:text-accent transition-colors duration-300">
+                    {label}
+                  </p>
+                  <p className="text-[13px] leading-[1.6] text-ink-muted">{description}</p>
+                  <p className="mt-5 text-[10px] uppercase tracking-[0.25em] text-accent/60 group-hover:text-accent transition-colors duration-300">
+                    Find films →
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <Footer />
       </main>
     </>

@@ -365,6 +365,77 @@ export const moodWorlds: MoodWorld[] = [
       radial-gradient(ellipse 80% 55% at 50% 35%, rgba(202,184,149,0.20) 0%, transparent 65%)
     `,
   },
+  {
+    slug: 'obsession',
+    number: '13',
+    name: 'Obsession',
+    tagline: 'For the thing that took over and wouldn’t let go.',
+    description:
+      'Films for the dark passenger — the love, the work, the idea that colonised you. The films here understand that obsession is just desire with nowhere to go.',
+    signature: '#c44b4b',
+    emotions: [
+      {
+        slug: 'destructive-love',
+        name: 'Destructive Love',
+        tagline: 'Films for the love that knew it was wrong and kept going.',
+        editorial: `There is a kind of love that you know, from the first moment, is going to cost you. You see the damage it will do — to you, to them, to the ordinary life you were building — and you walk toward it anyway. You cannot explain this to anyone who has not felt it. You cannot explain it to yourself. These films do not judge that. They sit inside the heat of the decision and let it breathe. They do not pretend love is always wise. They understand that some of the most real things you will ever feel are exactly the ones that had no future.`,
+      },
+      {
+        slug: 'creative-obsession',
+        name: 'Creative Obsession',
+        tagline: 'Films for the work that ate you alive and still wasn’t enough.',
+        editorial: `At some point, the thing you loved became the thing you could not stop. The line between devotion and destruction blurred and then disappeared. You cancelled everything that was not it. You lost people to it. You lost sleep, health, perspective — and there were days you would have given everything and more. These films understand that the artist’s obsession is not a personality flaw to be corrected. It is a mode of being that comes with its own cost structure, its own private logic, its own version of grace.`,
+      },
+    ],
+    hero: `
+      radial-gradient(ellipse 60% 50% at 30% 40%, rgba(196,75,75,0.45) 0%, transparent 55%),
+      radial-gradient(ellipse 70% 55% at 75% 70%, rgba(140,30,30,0.30) 0%, transparent 60%),
+      linear-gradient(160deg, #1e0808 0%, #0a0404 100%)
+    `,
+    tile: `
+      radial-gradient(ellipse 60% 50% at 30% 40%, rgba(196,75,75,0.42) 0%, transparent 55%),
+      linear-gradient(160deg, #1e0808 0%, #0e0505 100%)
+    `,
+    pageAtmosphere: `
+      radial-gradient(ellipse 60% 45% at 25% 20%, rgba(196,75,75,0.22) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 40% at 80% 80%, rgba(140,30,30,0.16) 0%, transparent 60%)
+    `,
+  },
+  {
+    slug: 'burnout',
+    number: '14',
+    name: 'Burnout',
+    tagline: 'For the exhaustion that is not just being tired.',
+    description:
+      'Films for the person who kept going long after the tank was empty — the particular silence of having given too much for too long.',
+    signature: '#8a7060',
+    emotions: [
+      {
+        slug: 'empty-achievement',
+        name: 'Empty Achievement',
+        tagline: 'Films for the summit that felt like nothing.',
+        editorial: `You reached it. The thing you told yourself would make everything make sense. You stood there and waited for the feeling and the feeling did not come. This is the particular cruelty of high-achieving emptiness — it has no obvious cause, no legible reason, no one to blame. You did everything right. You built the life. And you are standing in it wondering what went wrong. These films take that experience seriously. They do not offer solutions. They offer recognition, which is the rarer and more useful gift.`,
+      },
+      {
+        slug: 'compassion-fatigue',
+        name: 'Compassion Fatigue',
+        tagline: 'Films for when there is nothing left to give.',
+        editorial: `You have been the strong one. The one who stayed. The one who showed up when everyone else found reasons not to. You held other people’s pain for so long it became indistinguishable from your own. And now something in you has gone quiet — not peaceful quiet, but numb quiet. You still care. You just cannot find the caring right now. These films understand the cost of sustained empathy. They do not shame the caregiver for reaching a limit. They witness the particular exhaustion of those who made their love a daily practice.`,
+      },
+    ],
+    hero: `
+      radial-gradient(ellipse 80% 55% at 50% 45%, rgba(138,112,96,0.35) 0%, transparent 65%),
+      radial-gradient(ellipse 60% 40% at 20% 80%, rgba(100,70,50,0.25) 0%, transparent 60%),
+      linear-gradient(165deg, #1a120c 0%, #0a0806 100%)
+    `,
+    tile: `
+      radial-gradient(ellipse 80% 55% at 50% 45%, rgba(138,112,96,0.38) 0%, transparent 65%),
+      linear-gradient(165deg, #1a120c 0%, #0e0a07 100%)
+    `,
+    pageAtmosphere: `
+      radial-gradient(ellipse 80% 55% at 50% 30%, rgba(138,112,96,0.20) 0%, transparent 65%)
+    `,
+  },
 ];
 
 export function getWorld(slug: string): MoodWorld | undefined {

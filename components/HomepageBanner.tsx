@@ -5,13 +5,16 @@ import { useEffect, useState } from 'react';
 
 // Rotate through worlds daily — deterministic by day of year
 const WORLDS = [
-  'spiritual-awakening',   // Arrival
-  'healing',               // Eternal Sunshine
-  'grief',                 // Manchester by the Sea
-  'hope',                  // Shawshank
-  'inner-peace',           // Perfect Days
-  'existential-confusion', // Tree of Life
-  'loneliness',            // Lost in Translation
+  'spiritual-awakening',
+  'healing',
+  'grief',
+  'hope',
+  'inner-peace',
+  'existential-confusion',
+  'loneliness',
+  'obsession',
+  'burnout',
+  'identity-crisis',
 ];
 
 function todayWorld(): string {

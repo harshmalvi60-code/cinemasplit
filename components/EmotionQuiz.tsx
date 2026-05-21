@@ -102,6 +102,30 @@ const worldOptions: WorldOption[] = [
     worldSlug: 'emotional-growth',
     emotionSlug: 'becoming',
   },
+  {
+    label: 'Something has taken over me',
+    sub: 'a love, a work, a need I cannot stop',
+    worldSlug: 'obsession',
+    step2: {
+      question: 'What kind of obsession?',
+      options: [
+        { label: 'A person I cannot stop thinking about', sub: 'love that knows better but keeps going', emotionSlug: 'destructive-love' },
+        { label: 'A work I cannot stop making', sub: 'art, ambition, or a project that consumed me', emotionSlug: 'creative-obsession' },
+      ],
+    },
+  },
+  {
+    label: "I'm completely burned out",
+    sub: 'empty despite doing everything right',
+    worldSlug: 'burnout',
+    step2: {
+      question: 'Where is the emptiness?',
+      options: [
+        { label: 'I achieved everything and feel nothing', sub: "the summit I reached didn't feel like anything", emotionSlug: 'empty-achievement' },
+        { label: "I've given everything to others", sub: "there's nothing left inside for me", emotionSlug: 'compassion-fatigue' },
+      ],
+    },
+  },
 ];
 
 // ─── Component ─────────────────────────────────────────────────────────────────
