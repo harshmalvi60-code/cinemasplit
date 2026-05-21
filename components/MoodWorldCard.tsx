@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRef, useEffect, useState, MouseEvent } from 'react';
 import { MoodWorld } from '@/lib/types';
+import { filmsForWorld } from '@/lib/data/films';
 
 const backdropCache = new Map<string, string | null>();
 
@@ -116,9 +117,14 @@ export function MoodWorldCard({ world }: { world: MoodWorld }) {
           </div>
 
           <div className="flex justify-between items-center text-[12px] tracking-[0.18em] uppercase font-semibold">
-            <span className="text-ink-soft">
-              {world.emotions.length} {world.emotions.length === 1 ? 'emotion' : 'emotions'}
-            </span>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-ink-soft">
+                {world.emotions.length} {world.emotions.length === 1 ? 'emotion' : 'emotions'}
+              </span>
+              <span className="text-[10px] text-ink-faint normal-case tracking-[0.1em]">
+                {filmsForWorld(world.slug)} films
+              </span>
+            </div>
             <span className="inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300 text-accent">
               Enter <span aria-hidden>&rarr;</span>
             </span>

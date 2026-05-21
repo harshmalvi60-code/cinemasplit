@@ -1,0 +1,132 @@
+"use strict";exports.id=725,exports.ids=[725],exports.modules={725:(e,t,a)=>{a.d(t,{$:()=>s});var n=a(326),o=a(434),i=a(25),r=a(5056);function s(){let e=(0,i.WG)(),t=r.ys.flatMap(e=>e.emotions).length;return n.jsx("footer",{className:"pt-20 pb-14 border-t border-line mt-20",children:(0,n.jsxs)("div",{className:"grid grid-cols-1 md:grid-cols-[1.6fr_1fr] gap-12 md:gap-16 items-start",children:[(0,n.jsxs)("div",{children:[n.jsx("p",{className:"text-[22px] md:text-[26px] leading-[1.4] text-ink max-w-[560px] tracking-[-0.012em] font-medium",children:"Films don't just entertain. They quietly confirm you were seen — long before anyone in your real life knew how to."}),(0,n.jsxs)("div",{className:"flex flex-wrap gap-x-8 gap-y-2 mt-8 text-[12px] tracking-[0.18em] uppercase text-ink-muted font-medium",children:[(0,n.jsxs)("span",{children:[t," emotional states"]}),n.jsx("span",{className:"text-ink-faint",children:"\xb7"}),(0,n.jsxs)("span",{children:[e," curated films"]}),n.jsx("span",{className:"text-ink-faint",children:"\xb7"}),n.jsx("span",{className:"text-accent",children:"Growing weekly"})]})]}),(0,n.jsxs)("div",{className:"md:text-right text-[12px] tracking-[0.18em] uppercase text-ink-muted font-medium leading-[2.6]",children:[n.jsx(o.default,{href:"/",className:"block hover:text-ink transition-colors no-underline",children:"Worlds"}),n.jsx(o.default,{href:"/search",className:"block hover:text-ink transition-colors no-underline",children:"Search"}),n.jsx(o.default,{href:"/watchlist",className:"block hover:text-ink transition-colors no-underline",children:"Watchlist"}),n.jsx("span",{className:"block mt-6 text-[12px] tracking-[0.05em] normal-case text-ink-faint font-normal",children:"Cinemasplit \xb7 2026"})]})]})})}},5056:(e,t,a)=>{a.d(t,{ys:()=>n});let n=[{slug:"healing",number:"01",name:"Healing",tagline:"For the slow rebuild after the wound.",description:"Films for the part of you that is quietly putting itself back together — the slow, unglamorous work of becoming whole again.",signature:"#e9a06a",emotions:[{slug:"heartbreak-recovery",name:"Heartbreak Recovery",tagline:"Films for the long quiet after the door closed.",editorial:`There is a particular kind of tired that follows heartbreak — not sleepy, but hollowed. The world keeps moving at its regular pace and you cannot understand why it has not noticed. You want someone to say: this is real, this is serious, you are not dramatic for how much this hurts. Cinema can do that. The right film does not rush you toward okay. It sits with you in the aching reality of having loved someone who is now a story you keep almost telling. These films were chosen because they understand the difference between closure and the slow work of becoming someone who carries this differently.`},{slug:"emotional-numbness",name:"Emotional Numbness",tagline:"Films for when everything is grey and you don’t know why.",editorial:`This is harder to name than sadness. Sadness has a shape, a face, a reason. Numbness is the absence of all of that — the strange flatness where you expected to feel something, the inability to explain what happened to the week. Films are one of the few things that can reach through it. Not by cheering you up, but by being so specific about another person's inner life that, almost by accident, you remember you have one too. These films do not promise to fix the grey. They sit in it patiently, with enough honesty and craft that something, eventually, moves.`}],hero:`
+      radial-gradient(ellipse 80% 60% at 75% 30%, rgba(232,162,112,0.55) 0%, transparent 55%),
+      radial-gradient(ellipse 90% 70% at 20% 80%, rgba(190,90,55,0.32) 0%, transparent 65%),
+      linear-gradient(165deg, #2d1812 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 75% 60% at 80% 15%, rgba(232,162,112,0.65) 0%, transparent 55%),
+      linear-gradient(165deg, #2d1812 0%, #14090a 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 70% 50% at 85% 8%, rgba(232,162,112,0.28) 0%, transparent 55%),
+      radial-gradient(ellipse 90% 60% at 10% 90%, rgba(190,90,55,0.16) 0%, transparent 65%)
+    `},{slug:"loneliness",number:"02",name:"Loneliness",tagline:"For when no one seems to see you.",description:"Films for the silence that lives between you and everyone else — and the strange comfort of knowing that silence is not unique to you.",signature:"#7a9bd4",emotions:[{slug:"quiet-isolation",name:"Quiet Isolation",tagline:"Films for the version of you no one quite reaches.",editorial:`Some loneliness is loud — the party you left early, the group chat you stopped answering. But this kind is quieter. It is the distance between you and the people in the same room. It is falling asleep next to someone and feeling alone on a molecular level. It is not a crisis, exactly; it is a weather. Cinema built from this understanding — films where the city is too large and the apartments are too small and two people almost meet in the neon — can make the quiet feel shared. And shared is the beginning of less.`},{slug:"feeling-invisible",name:"Feeling Invisible",tagline:"Films for the kid at the back of every room.",editorial:`You have spent years in rooms where people looked slightly past you — close enough that they might have seen you, far enough that you could tell they did not. You became very good at watching. You learned everyone else's patterns. You made yourself smaller so the absence would hurt less. These films were made for you. Not the version of you performing confidence, but the one who sat at the edge of the lunch table trying to look like sitting there was a choice. These stories see that kid. They always did.`}],hero:`
+      radial-gradient(circle 12px at 72% 38%, rgba(220,230,255,0.85) 0%, transparent 75%),
+      radial-gradient(ellipse 90% 70% at 50% 65%, rgba(40,65,110,0.40) 0%, transparent 75%),
+      linear-gradient(180deg, #060b18 0%, #0a0d18 100%)
+    `,tile:`
+      radial-gradient(circle 6px at 72% 42%, rgba(220,230,255,0.9) 0%, transparent 75%),
+      radial-gradient(ellipse 110% 100% at 50% 65%, rgba(40,65,110,0.40) 0%, transparent 75%),
+      linear-gradient(180deg, #060b18 0%, #0d1626 100%)
+    `,pageAtmosphere:`
+      radial-gradient(circle 4px at 70% 30%, rgba(220,230,255,0.7) 0%, transparent 80%),
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(40,65,110,0.28) 0%, transparent 75%)
+    `},{slug:"identity-crisis",number:"03",name:"Identity Crisis",tagline:"For when you don’t know who you are anymore.",description:"Films for the strange in-between, where the version of you that worked stopped working and the new one has not arrived yet.",signature:"#9580b8",emotions:[{slug:"not-knowing-yourself",name:"Not Knowing Yourself",tagline:"Films for the path that disappeared mid-walk.",editorial:`At some point, the version of you that was working stopped working. The story you told about who you were — the reliable one, the driven one, the one who had figured it out — became a costume you kept putting on even after it stopped fitting. Identity crisis sounds clinical. It does not feel clinical. It feels like standing in front of a mirror and not recognising the person looking back. These films live inside that strangeness — the doubled self, the unrecognisable reflection — and stay there long enough for it to become something you can hold.`}],hero:`
+      radial-gradient(ellipse 55% 45% at 22% 32%, rgba(150,128,180,0.42) 0%, transparent 50%),
+      radial-gradient(ellipse 60% 50% at 78% 68%, rgba(108,90,140,0.35) 0%, transparent 55%),
+      linear-gradient(155deg, #1c1623 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 50% 40% at 22% 32%, rgba(150,128,180,0.40) 0%, transparent 50%),
+      radial-gradient(ellipse 55% 45% at 78% 68%, rgba(108,90,140,0.32) 0%, transparent 55%),
+      linear-gradient(155deg, #1c1623 0%, #0f0a14 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 50% 40% at 22% 20%, rgba(150,128,180,0.24) 0%, transparent 55%),
+      radial-gradient(ellipse 55% 45% at 78% 80%, rgba(108,90,140,0.20) 0%, transparent 60%)
+    `},{slug:"social-anxiety",number:"04",name:"Social Anxiety",tagline:"For when the room becomes a stage you never agreed to.",description:"Films for everyone whose nervous system reads connection as danger — and the slow, stubborn act of staying in the room anyway.",signature:"#b16a8a",emotions:[{slug:"fear-of-connection",name:"Fear of Connection",tagline:"Films for the part of you that wants to be known and can’t bear it.",editorial:`You want to be known. You also know, with bone-deep certainty, that if someone got close enough to actually know you, they would leave. So you build just enough warmth to seem approachable, and just enough distance to feel safe. And then you go home and feel the paradox of it. These films are for the nervous system that reads intimacy as danger — and for the stubborn, irrational part of you that keeps trying anyway. Not because the fear goes away. But because something keeps being worth the risk.`}],hero:`
+      radial-gradient(circle 30% at 70% 30%, rgba(177,106,138,0.45) 0%, transparent 55%),
+      radial-gradient(ellipse 80% 50% at 30% 80%, rgba(80,40,70,0.30) 0%, transparent 60%),
+      linear-gradient(165deg, #160812 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(circle 30% at 70% 30%, rgba(177,106,138,0.42) 0%, transparent 55%),
+      linear-gradient(165deg, #160812 0%, #0d050a 100%)
+    `,pageAtmosphere:`
+      radial-gradient(circle 28% at 75% 18%, rgba(177,106,138,0.24) 0%, transparent 55%)
+    `},{slug:"self-worth",number:"05",name:"Self-Worth",tagline:"For when you keep checking the bar nobody told you you were measuring against.",description:"Films for the long argument with the voice in your head — the one that says you’re not enough, and the slow process of stopping believing it.",signature:"#e6c97c",emotions:[{slug:"not-enough",name:"Feeling Like You’re Not Enough",tagline:"Films for the voice that keeps saying you’re behind.",editorial:`Nobody told you where the bar was. They just expected you to clear it. And somehow you internalised a standard so exacting that nothing you do quite reaches it — not the promotion, not the relationship, not the year you finally thought you had it together. This is the quiet violence of not-enoughness: it moves the target. These films do not offer affirmations. They offer something more useful — the company of people who were measured against impossible standards and found ways to live that were honest instead of compliant.`}],hero:`
+      radial-gradient(ellipse 90% 60% at 50% 100%, rgba(230,201,124,0.50) 0%, transparent 55%),
+      radial-gradient(ellipse 45% 35% at 50% 92%, rgba(255,220,140,0.45) 0%, transparent 45%),
+      linear-gradient(180deg, #1a1408 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 90% 60% at 50% 100%, rgba(230,201,124,0.50) 0%, transparent 55%),
+      linear-gradient(180deg, #1a1408 0%, #110a04 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 90% 55% at 50% 105%, rgba(230,201,124,0.28) 0%, transparent 55%)
+    `},{slug:"purpose-and-direction",number:"06",name:"Purpose & Direction",tagline:"For the dream that won’t let go.",description:"Films for the search that doesn’t end on a map — the long, restless walk toward meaning, vocation, or the thing you can’t name yet.",signature:"#f5c969",emotions:[{slug:"feeling-lost-in-life",name:"Feeling Lost in Life",tagline:"Films for the season when nothing seems to point anywhere.",editorial:`You did what you were supposed to do. You followed the plan, or you abandoned the plan, or you never had a plan — and here you are, in a life that does not quite feel like yours. The compass stopped working. Other people seem to know where they are going, which mostly means they are better at performing certainty. These films are for the season of not-knowing — not as a failure state to escape but as a territory worth understanding. Some of the most important living happens in the lost years. These filmmakers knew that.`}],hero:`
+      radial-gradient(ellipse 80% 55% at 50% 0%, rgba(245,201,105,0.40) 0%, transparent 55%),
+      radial-gradient(ellipse 60% 40% at 50% 100%, rgba(200,120,40,0.32) 0%, transparent 50%),
+      linear-gradient(180deg, #1c1408 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 80% 55% at 50% 0%, rgba(245,201,105,0.45) 0%, transparent 55%),
+      linear-gradient(180deg, #1c1408 0%, #110a04 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 80% 55% at 50% 0%, rgba(245,201,105,0.22) 0%, transparent 55%)
+    `},{slug:"existential-confusion",number:"07",name:"Existential Confusion",tagline:"For the question that hasn’t shut up since you turned twenty.",description:"Films for the moment the floor of certainty disappears — and the strange, vertigo-filled task of building a meaning that still holds you.",signature:"#88b8e8",emotions:[{slug:"meaning-of-life",name:"Meaning of Life",tagline:"Films for the long stare at the size of the universe.",editorial:`The question arrived sometime after you were old enough to understand it and before you were ready to live with it. Why any of this? What makes a life matter? What do you owe the time you have been given? Philosophy courses give you frameworks. These films give you something different — they give you the question, held in a human life, breathed through an hour of real consequences. The best of them do not answer. They sit beside you in the not-knowing and demonstrate, by their very existence, that the asking is worthwhile.`}],hero:`
+      radial-gradient(ellipse 80% 50% at 50% 40%, rgba(136,184,232,0.28) 0%, transparent 65%),
+      radial-gradient(circle 4px at 75% 60%, rgba(220,235,255,0.8) 0%, transparent 80%),
+      linear-gradient(180deg, #060e1a 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 80% 50% at 50% 40%, rgba(136,184,232,0.30) 0%, transparent 65%),
+      linear-gradient(180deg, #060e1a 0%, #0a0d18 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 80% 50% at 50% 30%, rgba(136,184,232,0.18) 0%, transparent 65%)
+    `},{slug:"grief",number:"08",name:"Grief",tagline:"For the love that had to end.",description:"Films for the goodbyes you have to keep saying — to people, to versions of yourself, to lives you thought you were building.",signature:"#7a9aa0",emotions:[{slug:"learning-to-live-again",name:"Learning to Live Again",tagline:"Films for the slow return of weight to your feet.",editorial:`Nobody tells you that grief is not linear. They say it, sometimes — the stages, the model — but knowing it abstractly does not prepare you for Tuesday, three months later, when you are fine in the morning and then a song comes on in a grocery store and you have to leave the cart and sit in your car. Grief has no schedule. It has no graduation. The films here were not chosen to help you process. They were chosen because they understand that some loss you live alongside, not through — and they treat that truth with the honesty it deserves.`}],hero:`
+      radial-gradient(ellipse 90% 60% at 50% 50%, rgba(122,154,160,0.32) 0%, transparent 65%),
+      linear-gradient(180deg, rgba(70,100,110,0.22) 0%, transparent 30%, transparent 65%, rgba(20,42,52,0.50) 100%),
+      linear-gradient(165deg, #0f1719 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 80% 50% at 50% 48%, rgba(122,154,160,0.30) 0%, transparent 65%),
+      linear-gradient(165deg, #0f1719 0%, #06090b 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 80% 50% at 50% 30%, rgba(122,154,160,0.22) 0%, transparent 65%)
+    `},{slug:"inner-peace",number:"09",name:"Inner Peace",tagline:"For the quiet you’ve been earning.",description:"Films for the days that don’t need to be saved or solved — only inhabited. The slow art of letting the world be enough.",signature:"#9cb87a",emotions:[{slug:"slowing-down",name:"Slowing Down",tagline:"Films for the day you stop arguing with the present.",editorial:`At some point — usually quietly, without announcement — you realise you have been in a hurry for years. Not going anywhere particular. Just moving fast, because speed felt like proof of something. These films are for the moment that speed runs out of argument. They are slow films. Not dull — slow with intention, the way a master craftsperson works with care instead of urgency. They show a life attended to rather than raced through. They are not prescriptions for how to live. They are invitations to notice that the present moment, patiently inhabited, is already enough.`}],hero:`
+      radial-gradient(ellipse 90% 55% at 50% 80%, rgba(156,184,122,0.38) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 50% 20%, rgba(200,220,160,0.22) 0%, transparent 60%),
+      linear-gradient(180deg, #101810 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 90% 55% at 50% 80%, rgba(156,184,122,0.40) 0%, transparent 60%),
+      linear-gradient(180deg, #101810 0%, #060a06 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 90% 55% at 50% 90%, rgba(156,184,122,0.20) 0%, transparent 60%)
+    `},{slug:"spiritual-awakening",number:"10",name:"Spiritual Awakening",tagline:"For the part of you that’s bigger than you.",description:"Films for the moment the small self steps aside — and something older, wider, and somehow more familiar walks through.",signature:"#c8a8e8",emotions:[{slug:"beyond-ego",name:"Beyond Ego",tagline:"Films for the dissolution that turned out to be the door.",editorial:`Something shifted. You cannot explain it cleanly to anyone, and you have stopped trying. The self you used to perform — the one with a career arc and an opinion on everything and a very specific idea of what success looked like — feels less like who you are and more like a role you were assigned. This is disorienting. It is also, quietly, a kind of relief. The films here understand the sensation of outgrowing the container. They were made by people who noticed the same thing and turned it into something you can sit with for two hours and come out the other side changed.`}],hero:`
+      radial-gradient(ellipse 60% 45% at 50% 35%, rgba(200,168,232,0.40) 0%, transparent 55%),
+      radial-gradient(ellipse 80% 50% at 50% 90%, rgba(232,200,140,0.28) 0%, transparent 60%),
+      linear-gradient(180deg, #15101e 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 60% 45% at 50% 35%, rgba(200,168,232,0.42) 0%, transparent 55%),
+      linear-gradient(180deg, #15101e 0%, #0a0710 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 60% 45% at 50% 25%, rgba(200,168,232,0.22) 0%, transparent 55%)
+    `},{slug:"hope",number:"11",name:"Hope",tagline:"For the first line of light under the door.",description:"Films for the unreasonable conviction that something good is still possible — and the people whose lives become an argument for it.",signature:"#ffd87a",emotions:[{slug:"light-after-darkness",name:"Light After Darkness",tagline:"Films for the morning that arrives anyway.",editorial:`You have been in the dark long enough that hope feels like a risk. Better to stay cautious. Better not to believe in things that might not come true. And then something happens — a line in a film, a stranger's act, a moment of ordinary grace — that makes the calculated caution feel less like wisdom and more like fear wearing a coat. These films are not motivational. They are not easy. They are arguments, carefully made, that hope is not naive — it is the most stubborn, evidence-based position available to a person who has been paying attention to how many mornings have arrived anyway.`}],hero:`
+      radial-gradient(ellipse 80% 50% at 50% 5%, rgba(255,216,122,0.50) 0%, transparent 55%),
+      radial-gradient(ellipse 90% 55% at 50% 100%, rgba(255,180,80,0.32) 0%, transparent 55%),
+      linear-gradient(180deg, #1a1408 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 80% 50% at 50% 5%, rgba(255,216,122,0.52) 0%, transparent 55%),
+      linear-gradient(180deg, #1a1408 0%, #100a04 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255,216,122,0.28) 0%, transparent 55%)
+    `},{slug:"emotional-growth",number:"12",name:"Emotional Growth & Maturity",tagline:"For the version of you who finally arrived.",description:"Films for the slow accumulation of becoming — the small wisdoms that don’t announce themselves, the quiet evidence that you’ve grown.",signature:"#cab895",emotions:[{slug:"becoming",name:"Becoming",tagline:"Films for the long arc you didn’t notice you were on.",editorial:`Growth does not announce itself. It shows up in retrospect — a conversation you handled better than you would have two years ago, a reaction you no longer have, a version of yourself you remember with something approaching compassion. You became this person slowly, without noticing, through a thousand ordinary days. Cinema is one of the few art forms that can render that slowness faithfully — the accumulation of small changes that adds up to someone different. These films are about the long arc. The patience. The quiet arrival of a self that is less afraid and more honest than the one you started with.`}],hero:`
+      radial-gradient(ellipse 90% 60% at 50% 50%, rgba(202,184,149,0.30) 0%, transparent 65%),
+      linear-gradient(165deg, #1c160e 0%, #0a0908 100%)
+    `,tile:`
+      radial-gradient(ellipse 80% 55% at 50% 45%, rgba(202,184,149,0.32) 0%, transparent 65%),
+      linear-gradient(165deg, #1c160e 0%, #100a06 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 80% 55% at 50% 35%, rgba(202,184,149,0.20) 0%, transparent 65%)
+    `},{slug:"obsession",number:"13",name:"Obsession",tagline:"For the thing that took over and wouldn’t let go.",description:"Films for the dark passenger — the love, the work, the idea that colonised you. The films here understand that obsession is just desire with nowhere to go.",signature:"#c44b4b",emotions:[{slug:"destructive-love",name:"Destructive Love",tagline:"Films for the love that knew it was wrong and kept going.",editorial:`There is a kind of love that you know, from the first moment, is going to cost you. You see the damage it will do — to you, to them, to the ordinary life you were building — and you walk toward it anyway. You cannot explain this to anyone who has not felt it. You cannot explain it to yourself. These films do not judge that. They sit inside the heat of the decision and let it breathe. They do not pretend love is always wise. They understand that some of the most real things you will ever feel are exactly the ones that had no future.`},{slug:"creative-obsession",name:"Creative Obsession",tagline:"Films for the work that ate you alive and still wasn’t enough.",editorial:`At some point, the thing you loved became the thing you could not stop. The line between devotion and destruction blurred and then disappeared. You cancelled everything that was not it. You lost people to it. You lost sleep, health, perspective — and there were days you would have given everything and more. These films understand that the artist’s obsession is not a personality flaw to be corrected. It is a mode of being that comes with its own cost structure, its own private logic, its own version of grace.`}],hero:`
+      radial-gradient(ellipse 60% 50% at 30% 40%, rgba(196,75,75,0.45) 0%, transparent 55%),
+      radial-gradient(ellipse 70% 55% at 75% 70%, rgba(140,30,30,0.30) 0%, transparent 60%),
+      linear-gradient(160deg, #1e0808 0%, #0a0404 100%)
+    `,tile:`
+      radial-gradient(ellipse 60% 50% at 30% 40%, rgba(196,75,75,0.42) 0%, transparent 55%),
+      linear-gradient(160deg, #1e0808 0%, #0e0505 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 60% 45% at 25% 20%, rgba(196,75,75,0.22) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 40% at 80% 80%, rgba(140,30,30,0.16) 0%, transparent 60%)
+    `},{slug:"burnout",number:"14",name:"Burnout",tagline:"For the exhaustion that is not just being tired.",description:"Films for the person who kept going long after the tank was empty — the particular silence of having given too much for too long.",signature:"#8a7060",emotions:[{slug:"empty-achievement",name:"Empty Achievement",tagline:"Films for the summit that felt like nothing.",editorial:`You reached it. The thing you told yourself would make everything make sense. You stood there and waited for the feeling and the feeling did not come. This is the particular cruelty of high-achieving emptiness — it has no obvious cause, no legible reason, no one to blame. You did everything right. You built the life. And you are standing in it wondering what went wrong. These films take that experience seriously. They do not offer solutions. They offer recognition, which is the rarer and more useful gift.`},{slug:"compassion-fatigue",name:"Compassion Fatigue",tagline:"Films for when there is nothing left to give.",editorial:`You have been the strong one. The one who stayed. The one who showed up when everyone else found reasons not to. You held other people’s pain for so long it became indistinguishable from your own. And now something in you has gone quiet — not peaceful quiet, but numb quiet. You still care. You just cannot find the caring right now. These films understand the cost of sustained empathy. They do not shame the caregiver for reaching a limit. They witness the particular exhaustion of those who made their love a daily practice.`}],hero:`
+      radial-gradient(ellipse 80% 55% at 50% 45%, rgba(138,112,96,0.35) 0%, transparent 65%),
+      radial-gradient(ellipse 60% 40% at 20% 80%, rgba(100,70,50,0.25) 0%, transparent 60%),
+      linear-gradient(165deg, #1a120c 0%, #0a0806 100%)
+    `,tile:`
+      radial-gradient(ellipse 80% 55% at 50% 45%, rgba(138,112,96,0.38) 0%, transparent 65%),
+      linear-gradient(165deg, #1a120c 0%, #0e0a07 100%)
+    `,pageAtmosphere:`
+      radial-gradient(ellipse 80% 55% at 50% 30%, rgba(138,112,96,0.20) 0%, transparent 65%)
+    `}];n.reduce((e,t)=>e+t.emotions.length,0)}};

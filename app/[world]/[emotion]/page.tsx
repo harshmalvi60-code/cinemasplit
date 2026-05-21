@@ -155,6 +155,40 @@ export default function EmotionPage({ params }: PageProps) {
           )}
         </section>
 
+        {/* RELATED EMOTIONAL JOURNEYS */}
+        <section className="py-14 md:py-16 border-t border-line">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="h-px w-5 bg-accent/50" />
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-accent/70">Related Emotional Journeys</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {moodWorlds
+              .filter((w) => w.slug !== world.slug)
+              .slice(0, 6)
+              .flatMap((w) => w.emotions.map((e) => ({ world: w, emotion: e })))
+              .slice(0, 6)
+              .map(({ world: w, emotion: e }) => (
+                <Link
+                  key={`${w.slug}/${e.slug}`}
+                  href={`/${w.slug}/${e.slug}`}
+                  className="group flex items-center gap-4 rounded-xl border border-white/6 bg-[#0b0d12]/50 p-4 hover:border-accent/30 hover:bg-accent/5 transition-all duration-300 no-underline"
+                >
+                  <span
+                    className="shrink-0 w-2 h-2 rounded-full"
+                    style={{ background: w.signature }}
+                  />
+                  <div className="min-w-0">
+                    <p className="text-[12px] font-semibold text-ink-soft group-hover:text-accent transition-colors duration-300 truncate">
+                      {e.name}
+                    </p>
+                    <p className="text-[10px] text-ink-faint mt-0.5 truncate">{w.name}</p>
+                  </div>
+                  <span className="ml-auto text-ink-faint group-hover:text-accent transition-colors duration-300 text-sm">→</span>
+                </Link>
+              ))}
+          </div>
+        </section>
+
         {/* NEXT CTAs */}
         <section className="py-16 md:py-20 border-t border-line grid grid-cols-1 md:grid-cols-2 gap-6">
           {nextInWorld && (
