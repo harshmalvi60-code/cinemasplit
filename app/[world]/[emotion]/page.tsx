@@ -9,7 +9,7 @@ import WorldHeroBanner from '@/components/WorldHeroBanner';
 import FilmSlider from '@/components/FilmSlider';
 import { getEmotion, moodWorlds } from '@/lib/data/taxonomy';
 import { getFilms } from '@/lib/data/films';
-import { getTmdbData } from '@/lib/data/tmdb';import type { Emotion, MoodWorld } from '@/lib/types';
+import type { Emotion, MoodWorld } from '@/lib/types';
 
 interface PageProps {
   params: { world: string; emotion: string };
@@ -144,7 +144,7 @@ export default function EmotionPage({ params }: PageProps) {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-y-14">
+            <div className="grid grid-cols-2 gap-x-3 gap-y-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 sm:gap-x-5 sm:gap-y-7">
               {films.map((film) => (
                 <FilmCard
                   key={`${film.title}-${film.year}`}

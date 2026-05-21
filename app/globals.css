@@ -40,26 +40,29 @@ body {
   position: relative;
 }
 
+/* Film grain overlay */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.9  0 0 0 0 0.82  0 0 0 0.55 0'/></filter><rect width='280' height='280' filter='url(%23n)'/></svg>");
-  opacity: 0.05;
+  opacity: 0.045;
   pointer-events: none;
   z-index: 100;
   mix-blend-mode: overlay;
 }
 
+/* Vignette */
 body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.5) 100%);
   pointer-events: none;
   z-index: 99;
 }
 
+/* ── ATMOSPHERIC GLOW ───────────────────────────────────────────────────────── */
 .glow {
   position: fixed;
   width: 70vw;
@@ -68,20 +71,20 @@ body::after {
   max-height: 1100px;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.45;
+  opacity: 0.4;
   pointer-events: none;
   z-index: 0;
 }
 .glow.cyan {
   top: -25vh;
   left: -20vw;
-  background: radial-gradient(circle, rgba(19, 237, 255, 0.12) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(19, 237, 255, 0.10) 0%, transparent 65%);
   animation: drift 50s ease-in-out infinite;
 }
 .glow.deep {
   top: 60vh;
   left: 55vw;
-  background: radial-gradient(circle, rgba(10, 164, 184, 0.10) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(10, 164, 184, 0.08) 0%, transparent 65%);
   animation: drift 65s ease-in-out infinite reverse;
 }
 
@@ -91,13 +94,41 @@ body::after {
   66%      { transform: translate(-10vw, 28vh) scale(0.95); }
 }
 
+/* ── SCROLLBAR ──────────────────────────────────────────────────────────────── */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
+/* ── GRAIN UTILITY ──────────────────────────────────────────────────────────── */
 .grain {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.9  0 0 0 0 0.82  0 0 0 0.55 0'/></filter><rect width='280' height='280' filter='url(%23n)'/></svg>");
 }
 
+/* ── CARD HOVER GLOW ────────────────────────────────────────────────────────── */
+.film-card-glow {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: radial-gradient(circle at 50% 0%, rgba(19, 237, 255, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.group:hover .film-card-glow {
+  opacity: 1;
+}
+
+/* ── CINEMATIC FADE-IN ──────────────────────────────────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fade-up 0.7s ease both;
+}
+.fade-up-delay-1 { animation-delay: 0.1s; }
+.fade-up-delay-2 { animation-delay: 0.2s; }
+.fade-up-delay-3 { animation-delay: 0.3s; }
+
+/* ── MOOD WORLD ATMOSPHERES ─────────────────────────────────────────────────── */
 [data-mood='dawn'] {
   background:
     radial-gradient(ellipse 70% 55% at 78% 20%, rgba(232, 162, 112, 0.65) 0%, transparent 55%),
@@ -157,4 +188,23 @@ body::after {
     radial-gradient(ellipse 80% 60% at 50% 45%, rgba(170, 175, 185, 0.20) 0%, transparent 70%),
     linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.55) 100%),
     linear-gradient(145deg, #18181c 0%, #0a0a0c 100%);
+}
+
+/* ── SNAP SCROLL ────────────────────────────────────────────────────────────── */
+.snap-x-mandatory {
+  scroll-snap-type: x mandatory;
+}
+.snap-start {
+  scroll-snap-align: start;
+}
+
+/* ── ELEGANT TRANSITIONS ────────────────────────────────────────────────────── */
+a, button {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ── SELECTION ──────────────────────────────────────────────────────────────── */
+::selection {
+  background: rgba(19, 237, 255, 0.2);
+  color: #f5f5f7;
 }
